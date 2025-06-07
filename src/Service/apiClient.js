@@ -1,6 +1,6 @@
 class ApiClient {
   constructor() {
-    this.baseUrl = "http://localhost:3000/api/v1";
+    this.baseUrl = "https://algo-nex-kgt5-git-main-shivshankars-projects-b7e36c22.vercel.app/api/v1";
     this.defaultHeaders = {
       "Content-Type": "application/json",
       Accept: "application/json",
