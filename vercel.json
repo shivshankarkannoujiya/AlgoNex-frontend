@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://algo-nex-kgt5.vercel.app/api/:path*"
+    }
+  ]
+}

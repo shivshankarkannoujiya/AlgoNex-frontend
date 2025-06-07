@@ -1,6 +1,9 @@
 class ApiClient {
   constructor() {
-    this.baseUrl = "https://algo-nex-kgt5.vercel.app/api/v1";
+    const isProd = import.meta.env.MODE === "production";
+    this.baseUrl = isProd
+    ? "/api/v1" 
+    : "http://localhost:3000/api/v1";
     this.defaultHeaders = {
       "Content-Type": "application/json",
       Accept: "application/json",
