@@ -19,7 +19,7 @@ const signupUser = createAsyncThunk(
   async ({ username, email, password }, thunkAPI) => {
     try {
       const res = await apiClient.signup(username, email, password);
-      return res.data.user;
+      return res.user;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
     }
